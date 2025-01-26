@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC|HARVEST | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">TEC|HARVEST</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <button onclick="window.location.href='login.html'" class="login-btn">Login</button>
+            <button onclick="window.location.href='login.html'" class="enroll-btn">Enroll Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to TEC|HARVEST</h1>
+        <p>Empowering students with AI-driven personalized learning experiences</p>
+        <button onclick="window.location.href='login.html'" class="cta-btn">Get Started</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>TEC|HARVEST is an innovative learning platform that combines AI technology with personalized education to help students achieve their goals.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>AI Personalized Learning</h3>
+                <p>Customized learning paths tailored to your needs</p>
+            </div>
+            <div class="feature-card">
+                <h3>Skill Development</h3>
+                <p>Comprehensive courses in coding, game development, art, music, and finance</p>
+            </div>
+            <div class="feature-card">
+                <h3>Personal AI Tutor</h3>
+                <p>24/7 assistance with your learning journey</p>
+            </div>
+            <div class="feature-card">
+                <h3>Remote Learning</h3>
+                <p>Access quality education from anywhere</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot (Added to home page) -->
+    <div id="chatIcon">💬</div>
+    <div id="chatbox">
+        <div id="chatHeader">
+            <span>Chat with AI</span>
+            <button id="closeChat">✖</button>
+        </div>
+        <div id="chatMessages"></div>
+        <div id="chatInput">
+            <input type="text" id="userInput" placeholder="Type your question...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

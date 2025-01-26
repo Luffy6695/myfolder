@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC|HARVEST | Student Login & Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <nav>
+        <div class="logo">TEC|HARVEST</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <div class="login-form" id="loginPage">
+        <div class="branding">TEC|HARVEST</div>
+        <h2>Student Login</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="username">Create Username:</label>
+        <input type="text" id="username" name="username" placeholder="Create a username" required>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+        <button type="button" id="loginSubmit">Submit</button>
+    </div>
+
+    <div class="redirectory-page hidden" id="redirectoryPage">
+        <div class="branding">TEC|HARVEST</div>
+        <div class="container">
+            <h2>Choose Your Domain</h2>
+            <label for="domain">Select Domain:</label>
+            <select id="domain">
+                <option value="">Select Domain</option>
+                <option value="coding">Coding</option>
+                <option value="gameDevelopment">Game Development</option>
+                <option value="artAndCraft">Art and Craft</option>
+                <option value="music">Music</option>
+                <option value="finance">Finance</option>
+            </select>
+
+            <div id="topicContainer" class="hidden">
+                <label for="topicSelect">Select Topic:</label>
+                <select id="topicSelect">
+                    <option value="">Choose a topic</option>
+                </select>
+                <button class="submit-btn" id="topicLink">Go to Topic</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chatIcon">💬</div>
+    <div id="chatbox">
+        <div id="chatHeader">
+            <span>Chat with AI</span>
+            <button id="closeChat">✖</button>
+        </div>
+        <div id="chatMessages"></div>
+        <div id="chatInput">
+            <input type="text" id="userInput" placeholder="Type your question...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
